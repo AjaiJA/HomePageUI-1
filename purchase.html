@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20MX227</title>
+    <style>
+        div{
+            padding-bottom:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="purchase">
+        <div class="form1">
+           <h2>Register for Miss Bakers Space Cadets</h2>
+           
+           <form action="#" method="GET">
+               <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="first">First Name</label>
+                    <input type="text" id="first" placeholder="First Name" class="firstname"/>
+                    <label for="last">Last Name</label>
+                    <input type="text" id="last" placeholder="Last Name" class="lastname"/>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" class="dob"/>
+                    <label for="mail">Email</label>
+                    <!-- <input type="email" id="mail" class="mail"> -->
+                    <input type="text" id="mail" class="mail">
+                    <label for="url">Url</label>
+                    <input type="url" id="url" class="url">
+                    <label for="telephone">Telephone</label>
+                    <!-- <input type="tel" id="telephone" class="telephone"> -->
+                    <input type="text" id="telephone" class="telephone">
+                    <label for="shoe">Shoe Size</label>
+                    <input type="number" id="shoe" class="shoe-size">
+                    <label for="skill">Flying Skill Level(1 low - 100 high)</label>
+                    <input type="range" min="1" max="100" value="50" class="skill-level">
+               </fieldset>
+            </form>
+        </div>
+        <div class="form2">
+            <form action="#" method="GET">
+                <fieldset>
+                    <legend>Billing Address</legend>
+                    <label for="address">Address</label>
+                    <textarea id="address" cols="20" rows="5"></textarea>
+                    <label for="post">Post Code</label>
+                    <input type="text" id="post" class="post-code">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" class="country">
+                </fieldset>
+            </form>
+        </div>
+        <div class="form3">
+            <form action="#" method="GET">
+                <fieldset>
+                    <legend>Card details</legend>
+                    <fieldset>
+                        <legend>Card type</legend>
+                        <input type="radio" name="card" value="visa" id="visa"><label for="visa">VISA</label>
+                        <input type="radio" name="card" value="mastercard" id="mastercard"><label for="mastercard">Mastercard</label>
+                        <input type="radio" name="card" value="amex" id="amex"><label for="amex">AMEX</label>
+                    </fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Name as it appears on you" class="name" id="name">
+                    <label for="cardno">Card number</label>
+                    <input type="text" id="cardno">
+                    <label for="secur">Security Code</label>
+                    <input type="text" id="secur">
+                    <label for="expiry">Expiry Date</label>
+                    <input type="date" id="expiry">
+                </fieldset>
+            </form>
+        </div>
+        <div class="submit-btn">
+            <fieldset>
+                <button onclick="placeOrder()" id="submit">Place Order</button>
+            </fieldset>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
